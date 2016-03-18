@@ -98,6 +98,9 @@ img {
 .owl-next { right: 0; }
 
 /* advertisement */
+.ads {
+	text-align: center;
+}
 .ads + .ads {
 	margin-top: 15px;
 }
