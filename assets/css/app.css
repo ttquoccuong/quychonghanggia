@@ -1,0 +1,211 @@
+@import url('font-awesome.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic|Roboto+Condensed:400,400italic,700,700italic|Roboto+Slab:400,700&subset=latin,vietnamese);
+@import url('fonts.css');
+@import url('animation.css');
+@import url('defaults.css');
+
+/* Header */
+#header {
+	padding-top: 10px;
+}
+.logo {
+	margin-bottom: 15px;
+	display: block
+}
+.header-right-top {
+	text-align: right;
+	margin: 0 -5px 8px;
+}
+.header-right-top > li > a {
+	padding: 0;
+	color: #000;
+	font-size: 14px;
+	display: block;
+	vertical-align: middle;
+	line-height: 20px;
+}
+.header-right-top > li > a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.header-right-top > li img {
+	margin-top: -2px;
+	margin-right: 3px;
+}
+.header-right-top > li .caret { margin-top: -2px; }
+.header-right-top .dropdown-menu {
+	left: auto;
+	right: 0;
+	min-width: 105px;
+}
+.header-right-top .dropdown-menu > li > a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.slogan {
+	margin-bottom: 15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	text-align: right;
+}
+
+/* frm-search */
+.frm-search {
+	border: 1px solid #e1e1e1;
+	padding: 5px 0;
+	float: right;
+	max-width: 250px;
+	margin-bottom: 15px;
+}
+
+.frm-search .form-control,
+.frm-search .btn {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	color: #141414;
+	height: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.frm-search .btn {
+	border-left: 1px solid #e1e1e1;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.frm-search .btn:hover {
+	background: transparent;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.navbar-primary {
+	background-color: #337ab7;
+	border: 0;
+	border-radius: 0;
+	min-height: 0;
+}
+.navbar-primary .navbar-toggle {
+	border-color: #fff;
+	padding: 7px 5px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.navbar-primary .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-primary .navbar-brand {
+	color: #fff;
+	height: 44px;
+	font-size: 25px;
+}
+.navbar-primary .navbar-nav {
+	margin-right: -10px;
+	margin-left: -10px;
+	padding: 8px 0 7px;
+}
+.navbar-primary .navbar-nav li a {
+	background-color: transparent;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding: 1px 13px 0px;
+}
+.navbar-primary .navbar-nav > li:last-child > a {
+	padding-right: 0;
+}
+.navbar-primary .navbar-nav > li > .dropdown-menu {
+	border: 0;
+	background-color: #337ab7;
+	padding: 0;
+	margin: 0;
+	top: 28px;
+}
+.navbar-primary .navbar-nav > li.open > a,
+.navbar-primary .navbar-nav > li > a:hover {
+	background: transparent;
+	color: #fff;
+}
+.navbar-primary .dropdown-menu > li > a {
+	color: rgba(255,255,255,.7);
+	padding: 10px;
+}
+.navbar-primary .dropdown-menu > li > a:hover,
+.navbar-primary .dropdown-menu > li > a:focus {
+	color: #fff;
+}
+.navbar-primary .navbar-nav > li:last-child .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+#main {
+	margin-bottom: 15px;
+}
+
+#footer {
+	background-color: #141414;
+}
+.footer-top {
+	padding: 20px 0;
+}
+.footer-intro {
+	padding: 0 80px;
+	color: #fff;
+	text-align: center;
+}
+.footer-bottom {
+	padding: 15px 0;
+	background-color: rgba(255,255,255,.01);
+	color: #fff;
+}
+.footer-bottom a {
+	color: #fff;
+}
+
+.section-featured-news {
+	margin-bottom: 20px;
+}
+.featured {
+	margin: 0 -5px;
+	float: left;
+}
+.featured  li {
+	padding: 0 5px;
+	float: left;
+	width: 33.3333333%;
+}
+.featured  li:first-child {
+	width: 100%;
+}
+.featured  li:first-child .article-title {
+	font-size: 18px;
+	margin-bottom: 2px;
+}
+.featured  li:first-child .article-label time {
+	display: inline;
+	margin-right: 10px;
+}
+.trending .article {
+	margin-bottom: 7px;
+}
+.trending li + li {
+	border-top: 1px solid #eee;
+	padding-top: 9px;
+}
+.featured .article-label time,
+.trending .article-label time {
+	display: block;
+}
+.section-videos {}
+.section-videos .article-cover > a:after {
+	content: '\f04b';
+	font-family: FontAwesome;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	margin-left: -8px;
+}

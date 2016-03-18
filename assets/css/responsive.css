@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+	.navbar-primary .navbar-brand {
+		height: auto;
+		padding: 8px 30px 8px 10px;
+		font-size: 18px;
+	}
+	.navbar-primary .navbar-nav > li {
+		border-left: 1px solid rgba(255,255,255,.5);
+	}
+	.footer-intro {
+		padding: 0 80px;
+	}
+}
+@media (min-width: 992px) {
+	.main-left {
+		width: 660px;
+	}
+	.main-right {
+		width: 320px;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo,
+	.header-right-top,
+	.slogan {
+		text-align: center;
+	}
+	.frm-search {
+		max-width: 100%;
+	}
+	.navbar-primary .dropdown-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 105;
+		width: 30px;
+		height: 40px;
+		text-align: center;
+	}
+	.navbar-primary .navbar-nav {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-primary .navbar-nav li > a {
+		padding: 10px 0;
+	}
+	.trending {}
+}
