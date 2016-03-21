@@ -17,14 +17,26 @@ $(document).ready(function () {
 	});
 
 	$('.featured-carousel').owlCarousel({
-		items: 1,
-		margin: 0
+        responsive: {
+            0: {
+                nav: false
+            },
+            480: {
+                nav: true
+            }
+        }
 	});
 	$('.images-carousel').owlCarousel({
-		items: 1,
-		margin: 0,
 		animateOut: 'fadeOut',
-		animateIn: 'fadeIn'
+		animateIn: 'fadeIn',
+        responsive: {
+            0: {
+                nav: false
+            },
+            480: {
+                nav: true
+            }
+        }
 	});
 	document.getElementById('copyright').innerHTML = "&copy; " + new Date().getFullYear() + " Quỹ Chống hàng giả";
 });

@@ -199,7 +199,7 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 4,
+		items: 1,
 		loop: true,
 		center: false,
 
@@ -208,7 +208,7 @@
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 20,
+		margin: 0,
 		stagePadding: 0,
 
 		merge: false,
