@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
 	.navbar-primary .navbar-brand {
 		height: auto;
-		padding: 8px 30px 8px 10px;
+		padding: 8px 22px 8px 10px;
 		font-size: 18px;
 	}
 	.navbar-primary .navbar-nav > li {
@@ -50,11 +50,11 @@
 	.navbar-primary .navbar-nav .open .dropdown-menu .dropdown-header {
 		padding-left: 10px;
 	}
-	.featured {
+	.section-featured {
 		border-bottom: 1px solid #eee;
 		margin-bottom: 15px;
 	}
-	.trending .article-label time {
+	.section-trending .article-label time {
 		display: inline-block;
 		margin-right: 10px;
 	}

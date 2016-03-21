@@ -1,63 +1,41 @@
-@import url('font-awesome.css');
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic|Roboto+Condensed:400,400italic,700,700italic|Roboto+Slab:400,700&subset=latin,vietnamese);
-@import url('fonts.css');
-@import url('animation.css');
-@import url('defaults.css');
-
 /* Header */
-#header {
-	padding-top: 10px;
+#header {}
+.header-top {
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ededed;
+	padding: 5px 0;
 }
-.logo {
-	margin-bottom: 15px;
-	display: block
-}
-.header-right-top {
-	text-align: right;
-	margin: 0 -5px 8px;
-}
-.header-right-top > li > a {
-	padding: 0;
-	color: #000;
-	font-size: 14px;
-	display: block;
-	vertical-align: middle;
-	line-height: 20px;
-}
-.header-right-top > li > a:hover {
-	text-decoration: none;
-	cursor: pointer;
-}
-.header-right-top > li img {
-	margin-top: -2px;
-	margin-right: 3px;
-}
-.header-right-top > li .caret { margin-top: -2px; }
-.header-right-top .dropdown-menu {
-	left: auto;
-	right: 0;
-	min-width: 105px;
-}
-.header-right-top .dropdown-menu > li > a {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.slogan {
-	margin-bottom: 15px;
-	font-family: 'Roboto Slab', serif;
+.header-top a {
+	color: #868686;
 	font-weight: 700;
-	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
-
+.header-top a:hover {
+	color: #242424;
+	text-decoration: none;
+}
+.header-top-left {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	float: left;
+}
+.header-top-left li {
+	float: left;
+	line-height: 14px;
+	font-size: 11px;
+}
+.header-top-left li + li {
+	border-left: 1px solid rgba(0,0,0,.2);
+}
 /* frm-search */
 .frm-search {
-	border: 1px solid #e1e1e1;
-	padding: 5px 0;
+	background-color: #fff;
+	border: 1px solid #ededed;
+	padding: 2px 0;
 	float: right;
 	max-width: 250px;
-	margin-bottom: 15px;
 }
-
 .frm-search .form-control,
 .frm-search .btn {
 	border: 0;
@@ -69,14 +47,33 @@
 	padding-bottom: 0;
 }
 .frm-search .btn {
-	border-left: 1px solid #e1e1e1;
-	padding-left: 9px;
-	padding-right: 5px;
+	border-left: 1px solid #ededed;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.frm-search .btn .fa {
+	margin-right: 0;
 }
 .frm-search .btn:hover {
 	background: transparent;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
+}
+.logo {
+	display: block;
+	margin: 15px 0;
+}
+.slogan {
+	font-weight: 700;
+	line-height: 40px;
+	min-height: 40px;
+	margin: 41px 0 49px;
+	color: #337ab7;
+	text-shadow: 0 0 10px rgba(51,122,183,.4);
+}
+.header-bottom .ads {
+	margin: 15px 0;
+	text-align: right;
 }
 .navbar-primary {
 	background-color: #337ab7;
@@ -106,10 +103,8 @@
 .navbar-primary .navbar-nav li a {
 	background-color: transparent;
 	color: #fff;
-	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 13px;
 	font-weight: 700;
-	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	padding: 1px 13px 0px;
 }
@@ -162,49 +157,138 @@
 .footer-bottom a {
 	color: #fff;
 }
-
-.section-featured-news {
-	margin-bottom: 20px;
+/* homepage style */
+.section-featured {
+	position: relative;
+	margin-bottom: 15px;
 }
-.featured {
-	margin: 0 -5px;
-	float: left;
+.section-featured .section-header {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	margin: 0;
+	border: 0;
 }
-.featured  li {
-	padding: 0 5px;
-	float: left;
-	width: 33.3333333%;
+.section-featured .section-title {
+	border: 0;
+	margin: 0;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: #337ab7;
 }
-.featured  li:first-child {
-	width: 100%;
-}
-.featured  li:first-child .article-title {
+.section-featured .article-title {
 	font-size: 18px;
-	margin-bottom: 2px;
+	line-height: 24px;
+	margin-bottom: 10px;
 }
-.featured  li:first-child .article-label time {
-	display: inline;
-	margin-right: 10px;
+.section-featured .article-label {
+	font-size: 12px;
 }
-.trending .article {
-	margin-bottom: 7px;
+.section-featured .article-brief {
+	font-size: 14px;
+	line-height: 22px;
 }
-.trending li + li {
-	border-top: 1px solid #eee;
-	padding-top: 9px;
+.section-trending {
+	background-color: #ddd;
+	margin-bottom: 15px;
 }
-.featured .article-label time,
-.trending .article-label time {
+.section-trending ul {
+	margin-bottom: 0;
+}
+.section-trending .section-header {
+	border: 0;
+	margin-bottom: 0;
+}
+.section-trending .section-title {
+	border: 0;
+	margin: 0;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: #ec971f;
 	display: block;
 }
-.section-videos {}
-.section-videos .article-cover > a:after {
-	content: '\f04b';
-	font-family: FontAwesome;
-	font-size: 20px;
-	color: #fff;
+.section-trending .section-body {
+	padding: 10px;
+}
+.section-trending li + li {
+	border-top: 1px solid #eee;
+	padding-top: 9px;
+	margin-top: 7px;
+}
+.section-trending .article {
+	margin-bottom: 0;
+}
+.section-trending li:first-child .article-title {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.section-images {
+	position: relative;
+}
+.section-images .section-header {
+	border: 0;
 	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	margin-left: -8px;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.section-images .section-title {
+	background-color: #ec971f;
+	color: #fff;
+	padding: 10px 15px;
+	border: 0;
+}
+.section-images .article-title {
+	font-size: 16px;
+	line-height: 24px;
+}
+.section-images .article-label {
+	font-size: 12px;
+	color: #ddd;
+}
+.section-images .owl-nav div {
+	background-color: #ec971f;
+}
+.government-gazette {}
+.government-gazette .post_results {
+	max-height: 140px;
+	overflow-x: hidden;
+	overflow-y: auto; 
+}
+.government-gazette .post_results::-webkit-scrollbar {
+    width: 5px;
+}
+.government-gazette .post_results::-webkit-scrollbar-thumb {
+  background-color: rgba(51,122,183,.5);
+}
+.government-gazette .loading_rss {
+	text-align: center;
+}
+.government-gazette ul {
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: -3px;
+}
+.government-gazette li {
+	list-style: none;
+	font-size: 13px;
+	line-height: 25px;
+}
+.government-gazette li:before {
+	content: "\f105";
+	font: normal normal normal 14px/1 FontAwesome;
+	padding-right: 5px;
+}
+
+.section-stamps {}
+.section-stamps .inner {
+	margin: 0 -5px;
+}
+.section-stamps figure {
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+	margin-bottom: 10px;
 }

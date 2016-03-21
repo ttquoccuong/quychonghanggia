@@ -8,8 +8,11 @@
 
 		<!-- Libs and Plugin CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/animation.css">
 		<link rel="stylesheet" href="assets/css/owl.carousel.css">
 		<!-- App CSS -->
+		<link rel="stylesheet" href="assets/css/defaults.css">
 		<link rel="stylesheet" href="assets/css/app.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -22,42 +25,45 @@
 	</head>
 	<body>
 		<header id="header">
-			<div class="container header-top">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">
-						<a href="" class="logo" title="Quỹ chống hàng giả">
-							<img src="assets/images/logo.png" alt="">
-						</a>
-					</div>
-					<div class="col-xs-12 col-sm-6">
-						<ul class="list-inline header-right-top">
-							<li>
-								<a href="tel:+841225550246"><i class="fa fa-phone-square"></i>Hotline : 0122 555 0246</a>
-							</li>
-							<li class="dropdown">
-								<a id="language" data-toggle="dropdown">
-									<img src="assets/images/i-vn.png" alt=""> VN
+			<section class="header-top">
+				<div class="container">					
+					<ul class="list-inline header-top-left">
+						<li><a href="#">Tiếng Việt</a></li>
+						<li><a href="#">Tiếng Anh</a></li>
+					</ul>
+					<form class="frm-search" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">
+									<i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="header-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3">
+							<a href="" class="logo" title="Quỹ chống hàng giả">
+								<img src="assets/images/logo.png" alt="Biểu tượng/Logo của Quỹ chống hàng giả">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-5">
+							<h1 class="slogan">Quỹ chống hàng giả</h1>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<figure class="ads">
+								<a href="">
+									<img src="assets/images/300x100.png" alt="Quảng cáo">
 								</a>
-								<ul class="dropdown-menu" aria-labelledby="language">
-									<li><a href="#"><img src="assets/images/i-vn.png" alt=""> Tiếng Việt</a></li>
-									<li><a href="#"><img src="assets/images/i-en.png" alt=""> Tiếng Anh</a></li>
-								</ul>
-							</li>
-						</ul>
-						<div class="slogan">Slogan text Lorem ipsum dolor sit consectetur air</div>
-						<form class="frm-search" role="search">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search">
-								<span class="input-group-btn">
-									<button type="submit" class="btn btn-default">
-										<i class="fa fa-search"></i>
-									</button>
-								</span>
-							</div>
-						</form>
+							</figure>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<nav class="navbar navbar-primary" role="navigation">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -143,103 +149,113 @@
 		</header>
 		<main id="main">
 			<div class="container">
-				<section class="section section-featured-news">
-					<div class="row">
-						<div class="col-sm-9 main-left">
-							<div class="row">
-								<div class="col-xs-12 col-sm-8 col-md-9">
-									<ul class="list-unstyled featured">
-										<li>
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 main-left">
+						<div class="row">
+							<div class="col-xs-12 col-sm-8">
+								<section class="section-featured">
+									<header class="section-header">
+										<h2 class="section-title">Tin chính</h2>
+									</header>
+									<div class="section-body">
+										<div class="featured-carousel owl-carousel">
 											<article class="article">
 												<figure class="article-cover">
 													<a href="">
-														<img src="assets/images/800x480.png" alt="">
+														<img src="assets/uploads/medium/1.jpg" alt="">
 													</a>
 												</figure>
 												<header class="article-header">
-													<h1 class="article-title"><a href="">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested</a></h1>
+													<h1 class="article-title"><a href="">Sập cầu Ghềnh, nhiều người rơi xuống sông</a></h1>
 													<div class="article-label">
 														<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-														<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-														<span class="article-image"><i class="fa fa-camera"></i></span>
-														<span class="article-video"><i class="fa fa-video-camera"></i></span>
 														<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
 													</div>
-													<div class="article-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, tempora illum nostrum voluptas dolore perspiciatis molestiae ratione blanditiis ut at, assumenda modi error cumque ducimus expedita non dolorum, neque, omnis!</div>
+													<div class="article-brief">Hai nhịp cầu Ghềnh (TP Biên Hoà) sập xuống sông Đồng Nai, sau khi bị sà lan đâm, khiến nhiều người và xe rơi xuống nước.</div>
 												</header>
 											</article>
-										</li>
-										<li>
 											<article class="article">
 												<figure class="article-cover">
 													<a href="">
-														<img src="assets/images/800x480.png" alt="">
+														<img src="assets/uploads/medium/2.jpg" alt="">
 													</a>
 												</figure>
 												<header class="article-header">
-													<h2 class="article-title"><a href="">Natus error accusantium doloremque laudantium</a></h2>
+													<h1 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h1>
 													<div class="article-label">
 														<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-														<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-														<span class="article-image"><i class="fa fa-camera"></i></span>
-														<span class="article-video"><i class="fa fa-video-camera"></i></span>
 														<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
 													</div>
+													<div class="article-brief">Sau tiếng động rất lớn, kính nổ văng khắp nhà, vợ chồng anh Đức chạy ra thì chứng kiến một người nằm bất động trước cửa, mảnh thi thể ở khắp các tầng cao.</div>
 												</header>
 											</article>
-										</li>
-										<li>
 											<article class="article">
 												<figure class="article-cover">
 													<a href="">
-														<img src="assets/images/800x480.png" alt="">
+														<img src="assets/uploads/medium/3.jpg" alt="">
 													</a>
 												</figure>
 												<header class="article-header">
-													<h2 class="article-title"><a href="">Omnis iste natus error sit voluptatem accusantium</a></h2>
+													<h1 class="article-title"><a href="">Ôtô chở nghi phạm của Công an Cần Thơ tông chết 3 người</a></h1>
 													<div class="article-label">
 														<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-														<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-														<span class="article-image"><i class="fa fa-camera"></i></span>
-														<span class="article-video"><i class="fa fa-video-camera"></i></span>
 														<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
 													</div>
+													<div class="article-brief">Xe của Công an TP Cần Thơ đang chở nghi phạm truy nã vừa bị bắt về trại giam, đã tông vào xe máy của hai thanh niên rồi lao vào người đàn ông quét rác.</div>
 												</header>
 											</article>
-										</li>
-										<li>
 											<article class="article">
 												<figure class="article-cover">
 													<a href="">
-														<img src="assets/images/800x480.png" alt="">
+														<img src="assets/uploads/medium/4.jpg" alt="">
 													</a>
 												</figure>
 												<header class="article-header">
-													<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
+													<h1 class="article-title"><a href="">Xe khách lật, 30 người may mắn thoát nạn</a></h1>
 													<div class="article-label">
 														<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-														<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-														<span class="article-image"><i class="fa fa-camera"></i></span>
-														<span class="article-video"><i class="fa fa-video-camera"></i></span>
 														<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
 													</div>
+													<div class="article-brief">Do tránh người đàn ông đứng nhặt bao tải giữa đường, xe khách đang chạy với tốc độ cao tạt vào bên trái đường rồi loạng choạng lật nghiêng xuống vũng nước.</div>
 												</header>
 											</article>
-										</li>
-									</ul>
-								</div>
-								<div class="col-xs-12 col-sm-4 col-md-3">
-									<section class="trending">
+											<article class="article">
+												<figure class="article-cover">
+													<a href="">
+														<img src="assets/uploads/medium/4.jpg" alt="">
+													</a>
+												</figure>
+												<header class="article-header">
+													<h1 class="article-title"><a href="">Tàu ngầm Komsomolets - nấm mồ titan khổng lồ của hải quân Nga</a></h1>
+													<div class="article-label">
+														<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+														<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+													</div>
+													<div class="article-brief">Một sự cố nhỏ đã biến chiếc tàu ngầm titan lớn nhất thế giới thành cỗ quan tài khổng lồ của các thủy thủ nằm lại dưới đáy biển sâu.</div>
+												</header>
+											</article>
+										</div>
+									</div>
+								</section>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<section class="section-trending">
+									<header class="section-header">
+										<h2 class="section-title">Tin nóng</h2>
+									</header>
+									<div class="section-body">
 										<ul class="list-unstyled">
 											<li>
 												<article class="article">
+													<figure class="article-cover">
+														<a href="">
+															<img src="assets/uploads/compact/5.jpg" alt="">
+														</a>
+													</figure>
 													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
+														<h2 class="article-title"><a href="">3 triệu phú gốc việt chưa đầy 35 tuổi</a></h2>
 														<div class="article-label">
 															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
 															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
 														</div>
 													</header>
@@ -248,170 +264,412 @@
 											<li>
 												<article class="article">
 													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
-														<div class="article-label">
-															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
-															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
-														</div>
+														<h2 class="article-title"><a href="">Kong: Skull island của hãng phim warner bros.</a></h2>
 													</header>
 												</article>
 											</li>
 											<li>
 												<article class="article">
 													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
-														<div class="article-label">
-															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
-															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
-														</div>
+														<h2 class="article-title"><a href="">Các dấu hiệu vi phạm của doanh nghiệp, người tham gia bán hàng đa cấp</a></h2>
 													</header>
 												</article>
 											</li>
 											<li>
 												<article class="article">
 													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
-														<div class="article-label">
-															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
-															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
-														</div>
+														<h2 class="article-title"><a href="">Vì sao ubnd tỉnh bình thuận họp gấp về kho báu 4.000 tấn vàng?</a></h2>
 													</header>
 												</article>
 											</li>
 											<li>
 												<article class="article">
 													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
-														<div class="article-label">
-															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
-															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
-														</div>
-													</header>
-												</article>
-											</li>
-											<li>
-												<article class="article">
-													<header class="article-header">
-														<h2 class="article-title"><a href="">Contrary to popular belief is not simply random text</a></h2>
-														<div class="article-label">
-															<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
-															<span class="article-text"><i class="fa fa-newspaper-o"></i></span>
-															<span class="article-image"><i class="fa fa-camera"></i></span>
-															<span class="article-video"><i class="fa fa-video-camera"></i></span>
-															<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
-														</div>
+														<h2 class="article-title"><a href="">Chuyên gia suy đoán máy bay rơi ở Nga do hiện tượng hiếm gặp</a></h2>
 													</header>
 												</article>
 											</li>
 										</ul>
-									</section>
-								</div>
+									</div>
+								</section>
 							</div>
 						</div>
-						<div class="col-sm-3 main-right">
-							<div class="panel panel-primary">
-								<div class="panel-heading">
-									<h3 class="panel-title">Công báo chính phủ</h3>
-								</div>
-								<div class="panel-body">
-									<p>Nội dung công báo chính phủ tóm tắt ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nobis animi quibusdam obcaecati debitis consequatur eius magni nihil, quis veritatis pariatur. Tempora, facere. Voluptatibus odit obcaecati, alias ipsam porro totam?</p>
-									<a href="" class="view-detail">Chi tiết ...</a>
+						<figure class="ads">
+							<a href="">
+								<img src="assets/images/640x100.png" alt="">
+							</a>
+						</figure>
+						<section class="section-images">
+							<header class="section-header">
+								<h2 class="section-title">Hoạt động truyền thống</h2>
+							</header>
+							<div class="section-body">
+								<div class="owl-carousel images-carousel">
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/large/6.jpg" alt="">
+											</a>
+											<header class="article-header">
+												<h1 class="article-title"><a href="">Pháo đài phòng không bất khả xâm phạm của phát xít Đức</a></h1>
+												<div class="article-label">
+													<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+													<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+												</div>
+											</header>
+										</figure>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/large/7.jpg" alt="">
+											</a>
+											<header class="article-header">
+												<h1 class="article-title"><a href="">9x làm chủ trang trại heo rừng tiền tỷ</a></h1>
+												<div class="article-label">
+													<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+													<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+												</div>
+											</header>
+										</figure>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/large/8.jpg" alt="">
+											</a>
+											<header class="article-header">
+												<h1 class="article-title"><a href="">6 nguyên tắc giúp phụ nữ lập kế hoạch tài chính cho tương lai</a></h1>
+												<div class="article-label">
+													<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+													<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+												</div>
+											</header>
+										</figure>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/large/9.jpg" alt="">
+											</a>
+											<header class="article-header">
+												<h1 class="article-title"><a href="">Donald Trump làm Tổng thống - mối nguy lớn cho kinh tế toàn cầu</a></h1>
+												<div class="article-label">
+													<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+													<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+												</div>
+											</header>
+										</figure>
+									</article>
 								</div>
 							</div>
-							<figure class="ads">
-								<a href="">
-									<img src="assets/images/300x200.png" alt="">
-								</a>
-							</figure>
-							<figure class="ads">
-								<a href="">
-									<img src="assets/images/300x200.png" alt="">
-								</a>
-							</figure>
-						</div>
+						</section>
+						<section class="panel panel-primary section-market">
+							<header class="panel-heading">
+								<h2 class="panel-title">Tin thị trường</h2>
+								<a href="" class="view-more">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+							</header>
+							<div class="panel-body">
+								<article class="article article-leading">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/medium/4.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h1 class="article-title"><a href="">Xe khách lật, 30 người may mắn thoát nạn</a></h1>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Do tránh người đàn ông đứng nhặt bao tải giữa đường, xe khách đang chạy với tốc độ cao tạt vào bên trái đường rồi loạng choạng lật nghiêng xuống vũng nước.</div>
+									</header>
+								</article>
+								<article class="article article-primary">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/compact/2.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Sau tiếng động rất lớn, kính nổ văng khắp nhà, vợ chồng anh Đức chạy ra thì chứng kiến một người nằm bất động trước cửa, mảnh thi thể ở khắp các tầng cao.</div>
+									</header>
+								</article>
+								<div class="article-secondary">
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/3.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h1 class="article-title"><a href="">Ôtô chở nghi phạm của Công an Cần Thơ tông chết 3 người</a></h1>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/1.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Sập cầu Ghềnh, nhiều người rơi xuống sông</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/6.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section class="panel panel-primary section-seminor">
+							<header class="panel-heading">
+								<h2 class="panel-title">Hội thảo</h2>
+								<a href="" class="view-more">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+							</header>
+							<div class="panel-body">
+								<article class="article article-leading">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/medium/9.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h1 class="article-title"><a href="">Xe khách lật, 30 người may mắn thoát nạn</a></h1>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Do tránh người đàn ông đứng nhặt bao tải giữa đường, xe khách đang chạy với tốc độ cao tạt vào bên trái đường rồi loạng choạng lật nghiêng xuống vũng nước.</div>
+									</header>
+								</article>
+								<article class="article article-primary">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/compact/5.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Sau tiếng động rất lớn, kính nổ văng khắp nhà, vợ chồng anh Đức chạy ra thì chứng kiến một người nằm bất động trước cửa, mảnh thi thể ở khắp các tầng cao.</div>
+									</header>
+								</article>
+								<div class="article-secondary">
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/1.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h1 class="article-title"><a href="">Ôtô chở nghi phạm của Công an Cần Thơ tông chết 3 người</a></h1>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/6.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Sập cầu Ghềnh, nhiều người rơi xuống sông</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/8.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section class="panel panel-primary section-seminor">
+							<header class="panel-heading">
+								<h2 class="panel-title">Hội chợ - triển lãm</h2>
+								<a href="" class="view-more">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+							</header>
+							<div class="panel-body">
+								<article class="article article-leading">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/medium/3.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h1 class="article-title"><a href="">Xe khách lật, 30 người may mắn thoát nạn</a></h1>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Do tránh người đàn ông đứng nhặt bao tải giữa đường, xe khách đang chạy với tốc độ cao tạt vào bên trái đường rồi loạng choạng lật nghiêng xuống vũng nước.</div>
+									</header>
+								</article>
+								<article class="article article-primary">
+									<figure class="article-cover">
+										<a href="">
+											<img src="assets/uploads/compact/4.jpg" alt="">
+										</a>
+									</figure>
+									<header class="article-header">
+										<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+										<div class="article-label">
+											<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+											<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+										</div>
+										<div class="article-brief">Sau tiếng động rất lớn, kính nổ văng khắp nhà, vợ chồng anh Đức chạy ra thì chứng kiến một người nằm bất động trước cửa, mảnh thi thể ở khắp các tầng cao.</div>
+									</header>
+								</article>
+								<div class="article-secondary">
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/5.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h1 class="article-title"><a href="">Ôtô chở nghi phạm của Công an Cần Thơ tông chết 3 người</a></h1>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/8.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Sập cầu Ghềnh, nhiều người rơi xuống sông</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+									<article class="article">
+										<figure class="article-cover">
+											<a href="">
+												<img src="assets/uploads/small/7.jpg" alt="">
+											</a>
+										</figure>
+										<header class="article-header">
+											<h2 class="article-title"><a href="">Nhân chứng vụ nổ ở Hà Đông: 'Mảnh thi thể văng lên nhà chúng tôi'</a></h2>
+											<div class="article-label">
+												<time datetime="2016-03-16 13:56+0700"><i class="fa fa-calendar-o"></i>16/03/2016 13:56</time>
+												<span class="article-comments"><i class="fa fa-comments-o"></i>77</span>
+											</div>
+										</header>
+									</article>
+								</div>
+							</div>
+						</section>
 					</div>
-				</section>
-				<section class="section section-videos">
-					<header class="section-header">
-						<h2 class="section-title">Video Nổi bật</h2>
-					</header>
-					<div class="section-body">
-						<div class="owl-carousel">
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
-							<article class="article">
-								<figure class="article-cover">
-									<a href="">
-										<img src="assets/images/800x480.png" alt="">
-									</a>
-									<header class="article-header">
-										<h2 class="article-title"><a href="">Sit voluptatem accusantium doloremque laudantium</a></h2>
-									</header>
-								</figure>
-							</article>
+					<div class="col-xs-12 col-sm-4 main-right">
+						<div class="panel panel-primary government-gazette">
+							<div class="panel-heading">
+								<h3 class="panel-title">Công báo chính phủ</h3>
+							</div>
+							<div class="panel-body">
+								<div class="post_results" id="post_results2" rss_num="10" rss_url="http://congbao.chinhphu.vn/cac_so_cong_bao_moi_dang.rss">
+									<div class="loading_rss">
+										<img alt="Loading..." src="assets/images/loading.gif" />
+									</div>
+								</div>
+							</div>
+							<script>
+								window.onload = function() {
+								    rssReader.init('post_results');
+								} 
+							</script>
 						</div>
+						<figure class="ads">
+							<a href="">
+								<img src="assets/images/300x200.png" alt="">
+							</a>
+						</figure>
+						<figure class="ads">
+							<a href="">
+								<img src="assets/images/300x200.png" alt="">
+							</a>
+						</figure>
+						<section class="section section-stamps">
+							<header class="section-header">
+								<h2 class="section-title">Tem chống hàng giả</h2>
+							</header>
+							<div class="section-body">
+								<div class="inner">
+									<figure>
+										<a href=""><img src="assets/uploads/tem1.jpg" alt=""></a>
+									</figure>
+									<figure>
+										<a href=""><img src="assets/uploads/tem2.jpg" alt=""></a>
+									</figure>
+									<figure>
+										<a href=""><img src="assets/uploads/tem2.jpg" alt=""></a>
+									</figure>
+									<figure>
+										<a href=""><img src="assets/uploads/tem1.jpg" alt=""></a>
+									</figure>
+								</div>
+							</div>
+							<footer class="section-footer">
+								<a href="" class="view-more">Xem thêm</a>
+							</footer>
+						</section>
+						<figure class="ads">
+							<a href="">
+								<img src="assets/images/300x200.png" alt="">
+							</a>
+						</figure>
 					</div>
-				</section>
+				</div>
 			</div>
 		</main>
 		<footer id="footer">
@@ -447,6 +705,7 @@
 		<!-- Libs and Plugin Js -->
 		<script src="assets/js/jquery-2.2.1.min.js"></script>
 		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/typed.js"></script>
 		<script src="assets/js/owl.carousel.js"></script>
 		<!-- App Js -->
 		<script src="assets/js/app.js"></script>

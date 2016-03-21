@@ -199,8 +199,8 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
-		loop: false,
+		items: 4,
+		loop: true,
 		center: false,
 
 		mouseDrag: true,
@@ -208,7 +208,7 @@
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 0,
+		margin: 20,
 		stagePadding: 0,
 
 		merge: false,
@@ -2483,9 +2483,9 @@
 	 * @public
 	 */
 	Autoplay.Defaults = {
-		autoplay: false,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: false,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		autoplaySpeed: false
 	};
 
@@ -2698,9 +2698,9 @@
 	 * @todo Rename `slideBy` to `navBy`
 	 */
 	Navigation.Defaults = {
-		nav: false,
+		nav: true,
 		navRewind: true,
-		navText: [ 'prev', 'next' ],
+		navText: [ '<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
