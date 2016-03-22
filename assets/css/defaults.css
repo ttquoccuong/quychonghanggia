@@ -106,8 +106,8 @@ img {
 }
 .panel .article-primary .article-cover {
 	float: left;
-	width: 50%;
-	padding-right: 10px;
+	width: 47%;
+	margin-right: 10px;
 	margin-bottom: 0;
 }
 .panel .article-secondary .article {
